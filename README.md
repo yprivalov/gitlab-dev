@@ -1,5 +1,8 @@
 # gitlab-dev
-# Deploy Gitlab-web and Gitlab-runner in one host
+## Deploy Gitlab-web and Gitlab-runner in one host
+
+
+## Installation
 
 export GITLAB_HOME=<peth to gitlab>
   
