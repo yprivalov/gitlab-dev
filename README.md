@@ -1,5 +1,5 @@
 # gitlab-dev
-Deploy Gitlab-web and Gitlab-runner in one host
+Deploy Gitlab-web and Gitlab-runner in one host. **Only for testing and development**
 
 
 ## Installation
