@@ -1,6 +1,6 @@
 registration_token="XXXXXXXXXXXXXXXXX"
 
-docker exec -it gitlab-runner1 \
+docker exec -it gitlab-runner \
   gitlab-runner register \
     --non-interactive \
     --registration-token ${registration_token} \
