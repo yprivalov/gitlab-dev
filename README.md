@@ -9,9 +9,9 @@ Edit GITLAB_HOME=<path to gitlab> in .env file
 docker-compose build
 docker-compose up -d
 
-mkdir $GITLAB_HOME/gitlab-runner/config/certs
-cp $GITLAB_HOME/gitlab/config/ssl/gitlab.local.key $GITLAB_HOME/gitlab-runner/config/certs/
-cp %GITLAB_HOME/gitlab/config/ssl/gitlab-web.crt $GITLAB_HOME/gitlab-runner/config/certs/
+mkdir $GITLAB_HOME/gitlab-runner/config/certs  
+cp $GITLAB_HOME/gitlab/config/ssl/gitlab.local.key $GITLAB_HOME/gitlab-runner/config/certs/  
+cp %GITLAB_HOME/gitlab/config/ssl/gitlab-web.crt $GITLAB_HOME/gitlab-runner/config/certs/  
 
 ## Runner register  
 
