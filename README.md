@@ -4,15 +4,14 @@ Deploy Gitlab-web and Gitlab-runner in one host. **Only for testing and developm
 
 ## Installation
 
-Edit GITLAB_HOME=<path to gitlab> in .env file.
+Edit GITLAB_HOME=<path to gitlab> in .env file
   
 docker-compose build
-
 docker-compose up -d
 
-cp $GITLAB_HOME/gitlab/config/ssl/gitlab-web.key $GITLAB_HOME/gitlab-runner1-config/certs/
-
-cp %GITLAB_HOME/gitlab/config/ssl/gitlab-web.crt $GITLAB_HOME/gitlab-runner1-config/certs/
+mkdir $GITLAB_HOME/gitlab-runner/config/certs
+cp $GITLAB_HOME/gitlab/config/ssl/gitlab.local.key $GITLAB_HOME/gitlab-runner/config/certs/
+cp %GITLAB_HOME/gitlab/config/ssl/gitlab-web.crt $GITLAB_HOME/gitlab-runner/config/certs/
 
 ## Runner register  
 
