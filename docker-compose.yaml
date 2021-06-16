@@ -24,6 +24,7 @@ services:
 
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
+    restart: always
     container_name: gitlab-runner
     hostname: 'gitlab-runner.local'
     volumes:
