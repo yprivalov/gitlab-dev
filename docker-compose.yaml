@@ -1,5 +1,7 @@
 version: "2.4"
+
 services:
+
   gitlab-web:
     image: 'gitlab/gitlab-ce:latest'
     restart: always
@@ -8,6 +10,10 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'https://gitlab.local'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
+        gitlab_rails['rack_attack_git_basic_auth'] = {
+            'enabled' => false
+        }
         #letsencrypt['enable'] = false
         #registry['enable'] = true
         # Add any other gitlab.rb configuration here, each on its own line
@@ -21,6 +27,7 @@ services:
       - '${GITLAB_HOME}/gitlab/data:/var/opt/gitlab'
     networks:
       - gitlab-network
+
 
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
