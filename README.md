@@ -23,7 +23,7 @@ chmod 755 gitlab-runer-register.sh
 ./gitlab-runer-register.sh  
 
 
-##How to reset your root password
+# How to reset your root password
 To reset your root password, first log into your server with root privileges.
 
 Start a Ruby on Rails console with this command:
