@@ -49,3 +49,6 @@ Don’t forget to save the changes.
 ```user.save!  
   user.unlock_access!
   ```
+  
+# Certificate
+https://forum.gitlab.com/t/using-a-self-signed-certificate/1111/4
